@@ -1,0 +1,23 @@
+mode: distributed
+replicas: 1        # number of MinIO pods (nodes)
+drivesPerNode: 2      # drives per pod
+
+mountPath: /data
+
+persistence:
+  enabled: false
+
+# Manually mount both old PVCs
+extraVolumes:
+  - name: old-pv-0
+    persistentVolumeClaim:
+      claimName: old-pvc-0
+  - name: old-pv-1
+    persistentVolumeClaim:
+      claimName: old-pvc-1
+
+extraVolumeMounts:
+  - name: old-pv-0
+    mountPath: /data-0
+  - name: old-pv-1
+    mountPath: /data-1
