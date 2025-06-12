@@ -36,3 +36,9 @@ Mirror the bucket called 'chunks', from the old deployment to the new deployment
 ```
 mc mirror oldminio/chunks newminio/chunks
 ```
+
+### Uninstall
+
+```
+helm uninstall minio-old -n minio-tmp
+```
