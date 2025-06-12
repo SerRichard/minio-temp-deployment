@@ -1,6 +1,6 @@
 mode: distributed
-replicas: 1        # number of MinIO pods (nodes)
-drivesPerNode: 2      # drives per pod
+replicas: 1
+drivesPerNode: 2 
 
 mountPath: /data
 
