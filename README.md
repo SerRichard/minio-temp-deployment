@@ -1,5 +1,5 @@
 # minio-temp-deployment
-Just a place to hold the yamls and readme for spinning up a short term minio instance which can be used to mirror data, where data exists in disks from a previous deployment.
+Just a place to hold the yamls and steps for spinning up a short term minio instance which can be used to mirror data, where data exists in disks from a previous deployment.
 
 This assumes 2 disks from a previous deployment need to be mirror'd into a new deployment. Check the order of the old disks by checking the set order found at:
 ```
